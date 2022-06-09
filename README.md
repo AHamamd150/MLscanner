@@ -7,3 +7,5 @@ Status:
 2- We have done the active learning scan with the batched points sampled random and chosen from the good predicted points.
 
 * I am a bit doubt that we different shapes for ML random and the Active Learning
+
+3- AL with VAE doesnt work perfectly and it is time consuming.
