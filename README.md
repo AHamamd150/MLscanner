@@ -1,4 +1,4 @@
-# Scanner package that use Machine learning models to scan over theoretical models. The package uses SPheno to calculate the physical observables and link the output to HiggsBounds and HiggsSignals programs.
+Scanner package that use Machine learning models to scan over theoretical models. The package uses SPheno to calculate the physical observables and link the output to HiggsBounds and HiggsSignals programs.
 
 
 
