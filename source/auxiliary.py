@@ -39,21 +39,6 @@ if not  os.path.exists(str(paths)+str(Lesh)):
     sys.exit (str(paths)+str(Lesh)+' NOT EXIST.')
 if not  os.path.exists(str(paths)+'/bin/SPheno%s'%(str(SPHENOMODEL))):
     sys.exit (str(paths)+'/bin/SPheno%s'%(str(SPHENOMODEL))+' NOT EXIST.')
-#############################################
-def replace_HS(i):
-    root=open (str(i))
-    f = open ('fout','w+')
-    for y in root :
-        if str ('Block HiggsCouplingsFermions, #') in y :
-            x = y.rsplit()
-            y = y.replace('Block HiggsCouplingsFermions, #', 'Block HiggsBoundsInputHiggsCouplingsFermions #')
-        if str ('Block HiggsCouplingsBosons #') in y: 
-            x = y.rsplit()
-            y = y.replace('Block HiggsCouplingsBosons #','Block HiggsBoundsInputHiggsCouplingsBosons #' )
-        f.write(y)
-    os.rename('fout',str(i))
-    f.close()
-
 ############Generate random numbers##################
 def generate_init_HEP(n):
     AI_2 = np.empty(shape=[0,TotVarScanned])
@@ -71,7 +56,7 @@ def generate_init_HEP(n):
         AI_2 = np.append(AI_2,AI_1,axis=0)    
     return AI_2         
 #######################################
-def run_train(npoints):
+def run_train(npoints):      # Function to train the ML replacing the 2&3 d functions with the HEP package
     os.chdir(paths)
     AI_X = np.empty(shape=[0,TotVarScanned])
     AI_Y = []
@@ -112,14 +97,14 @@ def run_train(npoints):
 
                 if (HiggsSignal ==1):
                     if os.path.exists(str(paths)+'spc.slha'):
-                        replace_HS(str(paths)+'spc.slha')
+                        
                         os.system('eval  %s/HiggsSignals %s peak 2 SLHA  %s %s %s/spc.slha >/dev/null'%(str(HSPath),str(LHC_run),str(NH),str(NCH),str(pathS)))
                         AI_yv=const_HS1(str(paths)+'spc.slha')   
                         AI_Y.append(AI_yv)  
                        
                 if (HiggsSignal ==2):
                     if os.path.exists(str(paths)+'spc.slha'):
-                        replace_HS(str(paths)+'spc.slha')
+                        
                         os.system('eval  %s/HiggsSignals %s peak 2 effC  %s %s %s/ >/dev/null'%(str(HSPath),str(LHC_run),str(NH),str(NCH),str(pathS)))
                         os.system('cat %s/spc.slha %s/HiggsSignals_results.dat > %s/sps2.out'%(str(pathS),str(pathS),str(pathS)))
                         os.rename(str(pathS)+'/sps2.out',str(pathS)+'/spc.slha')
@@ -173,14 +158,14 @@ def run_loop(npoints):
 
                 if (HiggsSignal ==1):
                     if os.path.exists(str(paths)+'spc.slha'):
-                        replace_HS(str(paths)+'spc.slha')
+                        
                         os.system('eval  %s/HiggsSignals %s peak 2 SLHA  %s %s %s/spc.slha >/dev/null'%(str(HSPath),str(LHC_run),str(NH),str(NCH),str(pathS)))
                         AI_yv=const_HS1(str(paths)+'spc.slha')
                         AI_Y.append(AI_yv)
 
                 if (HiggsSignal ==2):
                     if os.path.exists(str(paths)+'spc.slha'):
-                        replace_HS(str(paths)+'spc.slha')
+                        
                         os.system('eval  %s/HiggsSignals %s peak 2 effC  %s %s %s/ >/dev/null'%(str(HSPath),str(LHC_run),str(NH),str(NCH),str(pathS)))
                         os.system('cat %s/spc.slha %s/HiggsSignals_results.dat > %s/sps2.out'%(str(pathS),str(pathS),str(pathS)))
                         os.rename(str(pathS)+'/sps2.out',str(pathS)+'/spc.slha')
