@@ -1,0 +1,16 @@
+#######################################################
+#     ML scanner code to link Spheno with HD/HS       #
+#######################################################
+
+To run the code as : ./run.sh MLname 
+
+with MLname:
+1- DNNR: DNN regressor model with four hidden layers, 100 neurons, relu activation function. Binary cross entropy function minimized by Adam optimizer
+
+2- GBR: Gradient boost regressor model   with 100 trees and maximum depth = 30.
+
+3- RFR: Random forest regressor with 100 trees and maximum depth=30.
+
+4- SVR_RBF: Supported vector regressor with rbf kernal with C = 100, gamma=0.1 and epsilon=0.1
+
+4- SVR_POLY: Supported vector regressor with polynomial kernel with 3 degrees,C=100, gamma=0.1 and epsilon=0.1. 
