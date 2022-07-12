@@ -29,6 +29,14 @@ def Yellow(prt): print("\033[93m {}\033[00m" .format(prt))
 args = str(sys.argv[-1])
 l=['DNNR','GBR','RFR','SVR_RBF','SVR_POLY','DNNC','RFC']
 if args not in l: sys.exit(Red('The given model name is wrong, please check the available models by running ./run.sh --help '))
+    
+    
+#################################################
+##            Scanner class                     #          
+## all functions can be accessed from this class#
+#################################################
+#################################################
+    
 class scan():
     def __init__(self,iteration,L1,L,K, function_dim,th_value,period,frac):
         self.iteration= iteration
