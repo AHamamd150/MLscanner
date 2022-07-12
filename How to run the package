@@ -1,1 +1,9 @@
+To run the package:
 
+1- chmod 777 run.sh
+
+2- The user has to edit the file scan_input.py to include the full paths to the installed packages and the ranges of the scanned parameters
+
+3- To run scpecific ML model: ./run.sh DNNR
+
+For the full list of the implemented models please run: ./run.sh --help
