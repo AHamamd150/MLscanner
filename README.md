@@ -1,4 +1,4 @@
-#Animation to demonstrate how the ML can suggest points in the function region to be accumulated
+# Animation to demonstrate how the ML can suggest points in the function region to be accumulated
  
 https://user-images.githubusercontent.com/68282212/175757994-dda3b29f-61fb-45f4-b8ed-c055f9430723.MOV
 
