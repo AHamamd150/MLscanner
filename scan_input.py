@@ -71,4 +71,3 @@ HiggsSignal = 2 #### if 1 ---> switch it on. if 0 swithch off
 HSPath =  '/home/HiggsBounds-5.3.2beta'  ## Full path to Higgs bounds
 PATHMHUNCERTINITY = '/home/MHall_uncertainties.dat' ## mass_uncertinity file needed by higgssignals
 LHC_run = 'LHC13'     # put the upper value of chi square total ..  if 0 do not remove any spec
-
