@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras import Sequential
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras import Model,Sequential
 from tensorflow.keras.layers import Flatten,Dense,Dropout
