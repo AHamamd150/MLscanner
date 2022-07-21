@@ -268,7 +268,7 @@ class scan():
                 X = np.concatenate([XS_new[ob_smote==1],xsel2[ob==0][:len(ob_smote[ob_smote==1])]],axis=0)
                 obs=np.concatenate([ob_smote[ob_smote==1],ob[ob==0][:len(ob_smote[ob_smote==1])]],axis=0)
                 
-            elif (len(ob[ob==1])<180 and len(ob[ob==1])>3):
+            elif (len(ob[ob==1])<round(self.K*(1-self.frac)) and len(ob[ob==1])>3):
                 Y_smote = np.append(np.zeros(len(ob[ob==0])),np.ones(len(ob[ob==1])),axis=0)    
                 X_smote = np.append(x[:len(ob[ob==0])],xsel2[ob==1],axis=0)
                 oversample = SMOTE(k_neighbors=3,n_jobs=60)
