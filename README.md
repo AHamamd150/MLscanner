@@ -2,10 +2,10 @@ Scanner package that use Machine learning models to scan over theoretical HEP mo
 
 The package uses SPheno to calculate the physical observables and link the output to HiggsBounds and HiggsSignals programs.
 
-To use the package please look at 
+To use the package please look at [How to run the package](https://github.com/AHamamd150/MLscanner/blob/main/How%20to%20run%20the%20package).
 
 
-** Animation to demonstrate how the ML can suggest points in the target region to be accumulated for demo 2&3d functions defined in the paper.
+## Animation to demonstrate how the ML can suggest points in the target region to be accumulated for demo 2&3d functions defined in the paper.
  
 https://user-images.githubusercontent.com/68282212/175757994-dda3b29f-61fb-45f4-b8ed-c055f9430723.MOV
 
