@@ -3,7 +3,15 @@ The package uses SPheno to calculate the physical observables and link the outpu
 ML models is used to asses the scan over the Lagrangian parameters to fit the desired chi squared value reported by HiggsSignals program. 
 
 To use the package please look at [How to run the package](https://github.com/AHamamd150/MLscanner/blob/main/How%20to%20run%20the%20package).
-<span style="color: green"> Some green text </span>
+
+```diff
++ Green
+- Red
+! Orange
+@@ Pink @@
+# Gray
+...
+
  ## Animation to demonstrate how the ML can suggest points in the target region to be accumulated for demo 2&3d functions defined in the paper. 
 
  
