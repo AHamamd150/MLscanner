@@ -1,5 +1,4 @@
-Scanner package that use Machine learning models to scan over theoretical HEP models free parameters based on [arXiv:2207.09959 [hep-ph]](https://arxiv.org/abs/2207.09959). 
-
+Scanner package that use Machine learning models to scan over theoretical HEP models free parameters based on [arXiv:2207.09959 [hep-ph]](https://arxiv.org/abs/2207.09959). \
 The package uses SPheno to calculate the physical observables and link the output to HiggsBounds and HiggsSignals programs. \
 ML models is used to asses the scan over the Lagrangian parameters to fit the desired chi squared value reported by HiggsSignals program. 
 
