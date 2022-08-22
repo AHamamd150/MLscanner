@@ -5,10 +5,8 @@ ML models is used to asses the scan over the Lagrangian parameters to fit the de
 To use the package please look at [How to run the package](https://github.com/AHamamd150/MLscanner/blob/main/How%20to%20run%20the%20package).
 
 ```diff
-
-
  - ## Animation to demonstrate how the ML can suggest points in the target region to be accumulated for demo 2&3d functions defined in the paper. 
-...
+
  
 https://user-images.githubusercontent.com/68282212/175757994-dda3b29f-61fb-45f4-b8ed-c055f9430723.MOV
 
