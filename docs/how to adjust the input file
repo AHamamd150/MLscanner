@@ -1,1 +1,26 @@
+The user has to adjust this file to control scanning loop
 
+N_iteration : the numbe of scan iteration
+Size_initial_batch: the size of intital random scanning 
+Size_batch_L: size of the randomly selected points to be tested by the ML model after the training in each iteration
+Size_batch_K: bacth size of the predicted points by the ML to be refined by the HEP package
+Chi_square_threshold: threshold of the HiggsSignals chi squared 
+Full_train_period: the ML is trained over the full accumlated points after this period. If 1 then every iteration the ML model is trained over the full accumelated points
+Frac_random_points: the fraction of the random points added at each iteration from the batck K
+pathS: the full bath to the installed SPheno home dir
+Lesh: name of the used Leshouch file (the input to the Spheno packge). It has to be in the main directory of the Spheno package
+SPHENOMODEL: name of the HEP model to be used. It can be found in the spheno bin directory 
+VarLabel.append: label of the variable that the user want to scan over as exist in the LesHouche file
+VarNum.append: number of the scanned variable as in the LesHouche file 
+VarMin.append: minimum vlaue of the scan range
+VarMax.append: maximum vlaue of the scan range
+TotVarScanned: Total number of the scanned variables starting from top. For example if TotVarScanned = 3 the code will use the first three variables and ignore anything  else after this value.
+HiggsBounds: if 1 ---> include the HiggsBounds program into the loop, if 0 ---> do not include the HiggsBounds and use HiggsSignals only
+HiggsBounds: full path to the main directory of the installed HiggsBounds program
+NH: Number of the neutral Higgses in the model
+NCH: Number of the charged Higgses in the model
+ExcludeHB: if 1---> remove the points that violate the HiggsBounds constraints, if 0 ---> keep the points that violate the HiggsBounds constraints
+HiggsSignal: If 0 ---> do not include the HiggsSignals program, if 1 ----> use the HiggsSignals and read the needed information from the output Spheno spectrum file, if 2 ---> read the needed inforamtion from the produced spheno files.
+HSPath: Full path to the HiggsSignals home directory
+PATHMHUNCERTINITY: mass uncertinaty file needed by HiggsSignals in case off HiggsSignal = 2 only
+LHC_run: name of the LHC run analysis  to be used by the HiggsSignals 
