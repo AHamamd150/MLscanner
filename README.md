@@ -16,9 +16,28 @@ provide good results in less time.
 *  multiprocessing (for the intial training over multi-cores)
 * tqdm (for the illustration of the fancy progress bar)
 
-These packages can be easily installed by 
+These packages can be easily installed by `pip3 install module`
 
+## Package structure
+&emsp; The package consists if the following:
+* `run.sh` shall script that used to excute the package python files 
+* `scan_input.py` input file that the user has to fill it. The user can control the run via the switches in this file
+* `ML_regressor_genericFunctions.ipynb` google colab notebook that inclide the scan over the generic fucntions. The user can use it to scan over defined function. The class `scan()` include the following ML models:
+  * DNNR: MLP regressor with 4 hidden layers, 100 nueron each and MSE loss function.
+  * GBR : GradientBoostingRegressor
+  * RFR : RandomForestRegressor
+  * SVMRBF: Supported vector regressor wiht RBF kernel
+  * SVMPOLY: Supported vector regressor wiht polynomial kernel
+* `docs/` directory include the following:
+  * `Install` documentary on how to install the package
+  * `Run the package` documentay on how to run the package
+  * `how to adjust the input file` documentray on how the user adjust the input file
+* `source/` directory inculde the following source files:
+  * `auxiliary.py` file include the auxiliary functions to link spheno with HB/HS and functions for parallel run
+  * `MLs_HEP.py`   main file with the scanner loop. The class `scan()` is used to access the type of the needed ML 
 
+## Get started
+&emsp; To run the package `./run.sh `
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
 The 2d and 3d functions are defined as: 
 
