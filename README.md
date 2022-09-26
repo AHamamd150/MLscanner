@@ -43,12 +43,14 @@ These packages can be easily installed by `pip3 install module`
 * Spheno, HiggsBounds and HiggsSignals must be installed individually
 * `chmod 777 run.sh`
 * `scan_input.py` must be adjust by the user
-* 
+* `./run.sh --help` to find the name and information about all implemented ML models
 * `./run.sh ML` with ML is the name of one of the implemented ML models, e.g. DNNR for MLP regressor or DNNC for MLP classifier, etc
 * After the scan finished an output directory called `result` will be created in the same package directory contains the following 
   * File conatins the accumlated points file 
   * File contains the corresponding chi squared values from HiggsSignals
   * ML model saved weights to be used for the future without further taining
+
+## Workflow
 
 ____
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
