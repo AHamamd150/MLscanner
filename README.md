@@ -48,6 +48,8 @@ These packages can be easily installed by `pip3 install module`
   * File conatins the accumlated points file 
   * File contains the corresponding chi squared values from HiggsSignals
   * ML model saved weights to be used for the future without further taining
+
+
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
 The 2d and 3d functions are defined as: 
 
