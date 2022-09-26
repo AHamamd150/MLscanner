@@ -19,7 +19,7 @@ provide good results in less time.
 These packages can be easily installed by `pip3 install module`
 
 ## Package structure
-&emsp; The package consists if the following:
+&emsp; The package consists of the following:
 * `run.sh` shall script that used to excute the package python files 
 * `scan_input.py` input file that the user has to fill it. The user can control the run via the switches in this file
 * `ML_regressor_genericFunctions.ipynb` google colab notebook that inclide the scan over the generic fucntions. The user can use it to scan over defined function. The class `scan()` include the following ML models:
@@ -37,7 +37,16 @@ These packages can be easily installed by `pip3 install module`
   * `MLs_HEP.py`   main file with the scanner loop. The class `scan()` is used to access the type of the needed ML 
 
 ## Get started
-&emsp; To run the package `./run.sh `
+&emsp; To run the package:
+* Download and extract the packge in your local PC
+* Spheno, HiggsBounds and HiggsSignals must be installed individually
+* `chmod 777 run.sh`
+* `scan_input.py` must be adjust by the user
+* `./run.sh ML` with ML is the name of one of the implemented ML models, e.g. DNNR for MLP regressor or DNNC for MLP classifier, etc
+* After the scan finished an output directory called `result` will be created in the same package directory contains the following 
+  * File conatins the accumlated points file 
+  * File contains the corresponding chi squared values from HiggsSignals
+  * ML model saved weights to be used for the future without further taining
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
 The 2d and 3d functions are defined as: 
 
