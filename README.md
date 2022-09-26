@@ -49,8 +49,9 @@ These packages can be easily installed by `pip3 install module`
   * File contains the corresponding chi squared values from HiggsSignals
   * ML model saved weights to be used for the future without further taining
 
-
+____
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
+_____
 The 2d and 3d functions are defined as: 
 
 &emsp;&emsp;&emsp; $F_{2d} = [2+\cos\frac{x_1}{5}\cos\frac{x_2}{7}]^5$ &emsp; & &emsp; $F_{3d} = [2+\cos\frac{x_1}{7}\cos\frac{x_2}{7}\cos\frac{x_3}{7}]^5$
