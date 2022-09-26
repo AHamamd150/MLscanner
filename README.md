@@ -8,9 +8,24 @@ to locate points of interest such as best fit points, or to estimate the distrib
 consuming calculation that was used during training. As a caveat, considering that this process requires iteratively training a ML model during several epochs, which also requires time by itself, for cases where the calculations can be optimized to run rather fast, other methods may actually
 provide good results in less time.
 
-To use the package please look at [How to run the package](https://github.com/AHamamd150/MLscanner/blob/main/How%20to%20run%20the%20package).
+## Requirements
+&emsp; To run the package you need python3 with the following modules:
+* Numpy
+* TensorFlow
+* sklearn
+*  multiprocessing (for the intial training over multi-cores)
+* tqdm (for the illustration of the fancy progress bar)
+
+These packages can be easily installed by 
+
 
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
+The 2d and 3d functions are defined as: 
+
+&emsp;&emsp;&emsp; $F_{2d} = [2+\cos\frac{x_1}{5}\cos\frac{x_2}{7}]^5$ &emsp; & &emsp; $F_{3d} = [2+\cos\frac{x_1}{7}\cos\frac{x_2}{7}\cos\frac{x_3}{7}]^5$
+ 
+The animation shows how the RandomForest regressor  is used to speed up the scan convergence to $F_{2d/3d}= 100$ with standard diviation of 20. The MAE metric is used to determine the convergence after each iteration.
+
 https://user-images.githubusercontent.com/68282212/175757994-dda3b29f-61fb-45f4-b8ed-c055f9430723.MOV
 
 https://user-images.githubusercontent.com/68282212/175757998-81b09c8f-3b2d-4869-8dec-e42a4b6c1599.MOV
