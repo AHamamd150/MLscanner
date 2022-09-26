@@ -51,7 +51,7 @@ These packages can be easily installed by `pip3 install module`
   * ML model saved weights to be used for the future without further taining
 
 ## Workflow
-
+&emsp; Information about the workflow of the package modules and the used classes and functions can be found in `docs/workflow`
 ____
 ## $$\textcolor{red}{\text{Animation to demonstrate how the ML can suggest points in the target region.}}$$ 
 _____
