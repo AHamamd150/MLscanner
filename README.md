@@ -13,7 +13,8 @@ provide good results in less time.
 * Numpy
 * TensorFlow
 * sklearn
-*  multiprocessing (for the intial training over multi-cores)
+* imblearn 
+* multiprocessing (for the intial training over multi-cores)
 * tqdm (for the illustration of the fancy progress bar)
 
 These packages can be easily installed by `pip3 install module`
