@@ -27,8 +27,8 @@ These packages can be easily installed by `pip3 install module`
   * DNNR: MLP regressor with 4 hidden layers, 100 nueron each and MSE loss function.
   * GBR : GradientBoostingRegressor
   * RFR : RandomForestRegressor
-  * SVMRBF: Supported vector regressor wiht RBF kernel
-  * SVMPOLY: Supported vector regressor wiht polynomial kernel
+  * SVMRBF: Supported vector regressor with RBF kernel
+  * SVMPOLY: Supported vector regressor with polynomial kernel
 * `docs/` directory include the following:
   * `Install` documentary on how to install the package
   * `Run the package` documentay on how to run the package
