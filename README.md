@@ -80,7 +80,7 @@ ____
 _____
 The 2d and 3d functions are defined as: 
 
-&emsp;&emsp;&emsp; $F_{2d} = [2+\cos\frac{x_1}{5}\cos\frac{x_2}{7}]^5$ &emsp; & &emsp; $F_{3d} = [2+\cos\frac{x_1}{7}\cos\frac{x_2}{7}\cos\frac{x_3}{7}]^5$
+$~~~~~~~~~~~$ $~~~~~~~~~~~$ $~~~~~~~~~~~$ $~~~~~~~~~~~$ &emsp;&emsp;&emsp; $F_{2d} = [2+\cos\frac{x_1}{5}\cos\frac{x_2}{7}]^5$ &emsp; & &emsp; $F_{3d} = [2+\cos\frac{x_1}{7}\cos\frac{x_2}{7}\cos\frac{x_3}{7}]^5$
  
 The animation shows how the RandomForest regressor  is used to speed up the scan convergence to $F_{2d/3d}= 100$ with standard diviation of 20. The MAE metric is used to determine the convergence after each iteration.
 
