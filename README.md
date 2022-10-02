@@ -35,7 +35,7 @@ provide good results in less time.
 * multiprocessing (for the intial training over multi-cores)
 * tqdm (for the illustration of the fancy progress bar)
 
-These packages can be easily installed by `pip3 install module`
+Requirements can be easily installed by `pip3 install module`
 
 <a name="structure"></a>
 ## Package structure
