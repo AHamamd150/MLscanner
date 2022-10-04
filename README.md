@@ -40,7 +40,7 @@ Requirements can be easily installed by `pip3 install module`
 <a name="structure"></a>
 ## Package structure
 &emsp; The package consists of the following:
-* `run.sh` shall script that used to excute the package python files 
+* `run.sh` shall script that used to excute the package
 * `scan_input.py` input file that the user has to fill it. The user can control the run via the switches in this file
 * `ML_regressor_genericFunctions.ipynb` google colab notebook that inclide the scan over the generic fucntions. The user can use it to scan over defined function. The class `scan()` include the following ML models:
   * DNNR: MLP regressor with 4 hidden layers, 100 nueron each and MSE loss function.
@@ -52,8 +52,9 @@ Requirements can be easily installed by `pip3 install module`
   * `Install` documentary on how to install the package
   * `Run the package` documentay on how to run the package
   * `how to adjust the input file` documentray on how the user adjust the input file
+  * `work flow` explaination how the package modules and inhertied functions work  
 * `source/` directory inculde the following source files:
-  * `auxiliary.py` file include the auxiliary functions to link spheno with HB/HS and functions for parallel run
+  * `auxiliary.py`  include the auxiliary functions to link spheno with HB/HS and functions for parallel run
   * `MLs_HEP.py`   main file with the scanner loop. The class `scan()` is used to access the type of the needed ML 
 
 <a name="start"></a>
