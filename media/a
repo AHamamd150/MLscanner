@@ -1,1 +1,4 @@
 
+The animation shows how the RandomForest regressor  is used to speed up the scan convergence to $F_{2d/3d}= 100$ with standard diviation of 20. The MAE metric is used to determine the convergence after each iteration.
+
+https://user-images.githubusercontent.com/68282212/175757994-dda3b29f-61fb-45f4-b8ed-c055f9430723.MOV
